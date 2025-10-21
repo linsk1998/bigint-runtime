@@ -1,0 +1,40 @@
+{
+	"name": "bigint-runtime",
+	"version": "0.0.0",
+	"description": "A functional-style BigInt runtime library for JavaScript",
+	"license": "Apache-2.0",
+	"keywords": [
+		"bigint",
+		"biginteger",
+		"number",
+		"integer",
+		"tree-shaking"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/linsk1998/bigint-runtime.git"
+	},
+	"bugs": {
+		"url": "https://github.com/linsk1998/bigint-runtime/issues"
+	},
+	"homepage": "https://github.com/linsk1998/bigint-runtime#readme",
+	"type": "module",
+	"main": "dist/bigint-runtime.js",
+	"types": "dist/bigint-runtime.d.ts",
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"test": "node ./tests/tests.mjs && node ./tests/as-int-n.mjs && node ./tests/dataview.mjs",
+		"pretest": "npm run build"
+	},
+	"devDependencies": {
+		"typescript": "^4.4.2"
+	}
+}

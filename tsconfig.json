@@ -1,0 +1,41 @@
+{
+	"include": [
+		"src/**/*"
+	],
+	"compileOnSave": false,
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"allowUnreachableCode": false,
+		"declaration": true,
+		"downlevelIteration": true,
+		"importHelpers": false,
+		"inlineSources": false,
+		"lib": [
+			"DOM",
+			"es5",
+			"es2015.symbol.wellknown",
+			"es2015",
+		],
+		"module": "es6",
+		"moduleResolution": "node",
+		"noEmitOnError": true,
+		"noErrorTruncation": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"sourceMap": false,
+		"strict": false,
+		"outDir": "dist/",
+		"preserveConstEnums": false,
+		"skipDefaultLibCheck": true,
+		"strictBindCallApply": true,
+		"strictFunctionTypes": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"stripInternal": true,
+		"target": "esnext",
+		"types": []
+	},
+}
