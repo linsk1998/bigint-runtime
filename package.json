@@ -1,6 +1,6 @@
 {
 	"name": "bigint-runtime",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "A functional-style BigInt runtime library for JavaScript",
 	"license": "Apache-2.0",
 	"keywords": [

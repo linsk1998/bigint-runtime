@@ -1993,6 +1993,26 @@ function __isOneDigitInt(x: number) {
 	return (x & 0x3FFFFFFF) === x;
 }
 
+export var isBigInt = __isBigInt;
+export function isObject(value: unknown): value is object {
+	return value === null || typeof value === 'object' && value.constructor !== JSBI;
+}
+export function typeOf(value: any): string {
+	var type = typeof value;
+	switch(type) {
+		case 'object':
+			if(value !== null) {
+				if(value.constructor === JSBI) {
+					return 'bigint';
+				}
+				if(value.toString().substring(0, 2) === '@@') {
+					return 'symbol';
+				}
+			}
+	}
+	return type;
+}
+
 // 默认导出对象，包含所有公共API
 export default {
 	BigInt,
